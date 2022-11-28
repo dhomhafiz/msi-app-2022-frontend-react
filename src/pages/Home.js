@@ -76,7 +76,7 @@ export default function Home() {
 
       <form noValidate autoComplete='off' onSubmit={handleSubmit}>
         <Typography gutterBottom variant="h5" component="div" align="center">
-              Your Company Name yessssssssssss
+              Your Company Name
         </Typography>
         <Select
           onChange={(e) => setCompany(e.target.value)}
