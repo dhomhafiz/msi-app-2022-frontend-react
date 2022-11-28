@@ -21,6 +21,9 @@ const useStyles = makeStyles({
     marginTop: 20,
     marginBottom: 20,
     display: 'block'
+  },
+  menuItem: {
+    fontSize: 12
   }
 })
 
@@ -28,7 +31,7 @@ export default function Home() {
   const classes = useStyles()
   const [company, setCompany] = useState('')
   const [companyError, setCompanyError] = useState(false)
-  const { data: guests, isPending, Error } = useFetch('http://localhost:8080/guest/getAll')
+  const { data: guests, isPending, Error } = useFetch('https://dhomhafiz.click/guest/getAll')
 
   const history = useHistory();
 
@@ -78,7 +81,6 @@ export default function Home() {
         <Select
           onChange={(e) => setCompany(e.target.value)}
           className={classes.field}
-
           variant="outlined"
           color="secondary"
           fullWidth
@@ -86,11 +88,11 @@ export default function Home() {
           required
           error={companyError}
         >
-          <MenuItem value="None">
+          <MenuItem value="None" className={classes.menuItem}>
             <em>None</em>
           </MenuItem>
           {guests.map(guests =>
-              <MenuItem key={guests.id} value={guests.company}>{guests.company} <br/> {guests.name}</MenuItem>
+              <MenuItem key={guests.id} value={guests.company} className={classes.menuItem}>{guests.company}</MenuItem>
             )}
         </Select>
         <Box textAlign='center'>

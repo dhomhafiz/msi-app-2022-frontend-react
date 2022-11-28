@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => {
 export default function Guest({ children }) {
     const classes = useStyles()
     const { id } = useParams()
-    const { data: guest, isPending, Error } = useFetch(`http://localhost:8080/guest?company=${id}`)
+    const { data: guest, isPending, Error } = useFetch(`https://dhomhafiz.click/guest?company=${id}`)
 
 
     if(isPending) return <Backdrop open>
