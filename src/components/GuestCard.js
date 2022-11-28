@@ -74,9 +74,8 @@ export default function GuestCard({ guest }) {
                src={msiLogo}
         />
             <CardContent>
-                <Typography gutterBottom variant="h4" component="div" align='center'>
-                    {guest.company} <br />
-                    {guest.name}
+                <Typography gutterBottom variant="h5" component="div" align='center'>
+                    {guest.company}
                 </Typography>
                 <Typography color="textSecondary" align='center' gutterBottom variant="h4" borderRadius="50">
                     TABLE NO
