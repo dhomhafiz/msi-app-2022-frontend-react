@@ -23,9 +23,9 @@ const useStyles = makeStyles({
     display: 'block'
   },
   menuItem: {
-    // marginRight: -50,
-    // marginLeft: -10,
-    fontSize: 15
+    fontSize: 15,
+    whiteSpace: "unset",
+    wordBreak: "break-all"
   },
   buttonVerify: {
     marginTop: 20,
