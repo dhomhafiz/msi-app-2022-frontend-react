@@ -23,7 +23,12 @@ const useStyles = makeStyles({
     display: 'block'
   },
   menuItem: {
-    fontSize: 12
+    // marginRight: -50,
+    // marginLeft: -10,
+    fontSize: 15
+  },
+  buttonVerify: {
+    marginTop: 20,
   }
 })
 
@@ -80,13 +85,10 @@ export default function Home() {
         </Typography>
         <Select
           onChange={(e) => setCompany(e.target.value)}
-          className={classes.field}
+          // className={classes.field}
+          fullWidth
           variant="outlined"
           color="secondary"
-          fullWidth
-          value={company}
-          required
-          error={companyError}
         >
           <MenuItem value="None" className={classes.menuItem}>
             <em>None</em>
@@ -102,6 +104,7 @@ export default function Home() {
             endIcon={<SendIcon />}
             variant="contained"
             size="medium"
+            className={classes.buttonVerify}
           >
             VERIFY
           </Button>
