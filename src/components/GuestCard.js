@@ -11,7 +11,7 @@ import SearchIcon from '@material-ui/icons/Search'
 import HomeIcon from '@material-ui/icons/Home'
 import { DeleteOutlined } from '@material-ui/icons'
 import msiLogo from '../img/MSI 2022 TableWelcome.png'
-import msiTableLoc from '../img/table_loc.jpeg'
+import msiTableLoc from '../img/TableLayOutFINAL.jpeg'
 import { useHistory } from 'react-router-dom'
 import Modal from '@mui/material/Modal';
 import useFetch from '../useFetch'
@@ -100,6 +100,7 @@ export default function GuestCard({ guest }) {
                             color="secondary" 
                             size="large" 
                             startIcon={<SearchIcon />}
+                            fullWidth
                             > Locate Your Table
                         </Button>
                     </Box>
@@ -126,6 +127,7 @@ export default function GuestCard({ guest }) {
                         size="large" 
                         paddingBottom="100px"
                         startIcon={<HomeIcon />}
+                        fullWidth
                         >
                             GO Back
                         </Button>

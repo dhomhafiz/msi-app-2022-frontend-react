@@ -101,6 +101,7 @@ export default function Home() {
           <Button
             type="submit"
             color="secondary"
+            fullWidth
             endIcon={<SendIcon />}
             variant="contained"
             size="medium"
