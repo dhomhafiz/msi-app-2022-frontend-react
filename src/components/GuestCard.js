@@ -82,12 +82,13 @@ export default function GuestCard({ guest }) {
                 </Typography>
                 <Box textAlign='center'>
                     <Button
+                        onClick={handleOpen}
                         alignItem='center'
                         variant="outlined"
-                        disabled
+                        // disabled
                         color="secondary"
                         className={classes.button}
-                        style={{fontSize: '63px'}}
+                        style={{fontSize: '63px', color: "#21b6ae", borderColor: "#21b6ae"}}
                     >
                         {guest.tableNo} 
                     </Button>
