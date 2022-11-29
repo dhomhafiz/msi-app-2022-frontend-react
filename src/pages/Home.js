@@ -84,6 +84,7 @@ export default function Home() {
               Your Company Name
         </Typography>
         <Select
+          defaultValue=""
           onChange={(e) => setCompany(e.target.value)}
           // className={classes.field}
           fullWidth
@@ -97,6 +98,13 @@ export default function Home() {
               <MenuItem key={guests.id} value={guests.company} className={classes.menuItem}>{guests.company}</MenuItem>
             )}
         </Select>
+        <TextField
+                    onChange={(e) => setCompany(e.target.value)}
+                    // className={classes.field}
+                    fullWidth
+                    variant="outlined"
+                    color="secondary"
+        ></TextField>
         <Box textAlign='center'>
           <Button
             type="submit"
