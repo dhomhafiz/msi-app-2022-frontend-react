@@ -11,7 +11,7 @@ import SearchIcon from '@material-ui/icons/Search'
 import HomeIcon from '@material-ui/icons/Home'
 import { DeleteOutlined } from '@material-ui/icons'
 import msiLogo from '../img/MSI 2022 TableWelcome.png'
-import msiTableLoc from '../img/TableLayOutFINAL.jpeg'
+import msiTableLoc from '../img/TableLocationSUPERFINALE.jpeg'
 import { useHistory } from 'react-router-dom'
 import Modal from '@mui/material/Modal';
 import useFetch from '../useFetch'

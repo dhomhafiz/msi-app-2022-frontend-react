@@ -37,14 +37,10 @@ export default function Home() {
   const [company, setCompany] = useState('')
   const [companyError, setCompanyError] = useState(false)
   const { data: guests, isPending, Error } = useFetch('https://dhomhafiz.click/guest/getAll')
-
   const history = useHistory();
-
-
 
   if(Error) return console.log(Error);
   
-
   const handleSubmit = (e) => {
     e.preventDefault()
     setCompanyError(false)
@@ -86,7 +82,6 @@ export default function Home() {
         <Select
           defaultValue=""
           onChange={(e) => setCompany(e.target.value)}
-          // className={classes.field}
           fullWidth
           variant="outlined"
           color="secondary"
